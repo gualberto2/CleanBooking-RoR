@@ -7,7 +7,7 @@ class Components::Testimonials < Phlex::HTML
   end
 
   def test
-    render div(class: "flex flex-col items-center justify-center") do
+    div(class: "flex flex-col items-center justify-center") do
       @testimonials.each do |testimonial|
         div { testimonial[:content] }
       end
@@ -15,7 +15,7 @@ class Components::Testimonials < Phlex::HTML
   end
 
   def view_template
-    render Carousel(options: { loop: false }, class: "w-1/2 ") do
+    Carousel(options: { loop: true }, class: "w-full ") do
       CarouselContent do
         @testimonials.each do |testimonial|
           CarouselItem do
@@ -29,10 +29,8 @@ class Components::Testimonials < Phlex::HTML
           end
         end
       end
-      div(class: "flex justify-between") do
-        div { CarouselPrevious() }
-        div { CarouselNext() }
-      end
+      CarouselPrevious()
+      CarouselNext()
     end
   end
 end
