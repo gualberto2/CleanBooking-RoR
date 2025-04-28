@@ -14,4 +14,3 @@ pin "mustache" # @4.2.0
 pin "fuse.js" # @7.1.0
 pin "tippy.js", to: "https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/+esm"
 pin "@popperjs/core", to: "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/+esm"
-
