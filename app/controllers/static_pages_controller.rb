@@ -29,17 +29,22 @@ class StaticPagesController < ApplicationController
   title: "The Future of Cleaning Management Software",
   description: "Discover how AI and automation are transforming the cleaning industry landscape.",
   date: "Apr 20, 2024",
+  url: "#",
   image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
 }, {
   id: 2,
   title: "Sustainable Cleaning Practices for 2024",
   description: "Eco-friendly cleaning solutions that benefit both your business and the environment.",
   date: "Apr 18, 2024",
+  url: "#",
+
   image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
 }, {
   id: 3,
   title: "Maximizing Efficiency in Team Management",
   description: "Learn how to optimize your cleaning team's performance with modern tools.",
+  url: "#",
+
   date: "Apr 15, 2024",
   image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
 }, {
@@ -47,16 +52,21 @@ class StaticPagesController < ApplicationController
   title: "Client Communication Best Practices",
   description: "Effective strategies for maintaining strong client relationships in the cleaning industry.",
   date: "Apr 12, 2024",
+  url: "#",
+
   image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
 }, {
   id: 5,
   title: "Growing Your Cleaning Business",
   description: "Expert tips for scaling your cleaning company in today's competitive market.",
   date: "Apr 10, 2024",
+  url: "#",
+
   image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
 }, {
   id: 6,
   title: "Technology Trends in Cleaning Services",
+  url: "#",
   description: "Stay ahead with the latest technological innovations in the cleaning industry.",
   date: "Apr 8, 2024",
   image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"

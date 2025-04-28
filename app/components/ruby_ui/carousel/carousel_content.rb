@@ -14,7 +14,7 @@ module RubyUI
       {
         class: [
           "flex",
-          "group-[.is-horizontal]:-ml-4",
+          "group-[.is-horizontal]:",
           "group-[.is-vertical]:-mt-4 group-[.is-vertical]:flex-col"
         ]
       }
