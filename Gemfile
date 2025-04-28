@@ -72,3 +72,5 @@ gem "tailwind_merge", "~> 1.2"
 gem "lucide-rails", "~> 0.5.1"
 
 gem "importmap-rails", "~> 2.1"
+
+gem "devise", "~> 4.9"

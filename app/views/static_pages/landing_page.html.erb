@@ -13,9 +13,9 @@
         </div>
       </div>
       <nav class="items-center hidden space-x-8 md:flex">
-        <a href="#" class="font-medium text-blue-900">
-          Home
-        </a>
+        <div class="font-medium text-blue-900">
+       <%= link_to 'Home', root_path%>
+        </div>
         <a href="#" class="text-gray-600 hover:text-blue-900">
           Packages
         </a>
@@ -31,7 +31,8 @@
           Contact
         </button>
         <button class="px-5 py-2 font-medium text-white bg-blue-700 rounded-md hover:bg-blue-800">
-          Login 
+       <%= link_to 'Login', dashboard_path %>
+
         </button>
       </div>
     </header>
