@@ -92,52 +92,161 @@
   </div>
 
   <div class="z-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-   <%= render 'shared/service_cards',
-  icon:lucide_icon('arrow-right') ,
-  title: 'AC Repair',
-  description: 'AC repair is a service provided by HVAC technicians to diagnose and fix issues.'
-%>
-
-<%= render 'shared/service_cards',
-  icon: lucide_icon('arrow-right'),
-  title: 'Fridge Servicing',
-  description: 'Fridge servicing is a maintenance and repair service designed to ensure the optimal performance.'
-%>
-
-<%= render 'shared/service_cards',
-  icon:lucide_icon('arrow-right') ,
-  title: 'Home Cleaning',
-  description: 'Experienced professionals use effective cleaning methods and eco-friendly products.'
-%>
-
-<%= render 'shared/service_cards',
-  icon:lucide_icon('arrow-right'),
-  title: 'Office Cleaning',
-  description: 'Office cleaning services are specialized solutions designed to maintain a clean, healthy workspace.'
-%>
-
-<%= render 'shared/service_cards',
-  icon:lucide_icon('arrow-right') ,
-  title: 'Kitchen Cleaning',
-  description: 'Kitchen cleaning services provide thorough and specialized cleaning solutions.'
-%>
-
-<%= render 'shared/service_cards',
-  icon:lucide_icon('arrow-right') ,
-  title: 'Home Decor',
-  description: 'Home decor encompasses the art of enhancing and personalizing your living space.'
-%>
+    <%= render 'shared/service_cards',
+      icon:lucide_icon('arrow-right') ,
+      title: 'AC Repair',
+      description: 'AC repair is a service provided by HVAC technicians to diagnose and fix issues.'
+    %>
+    <%= render 'shared/service_cards',
+      icon: lucide_icon('arrow-right'),
+      title: 'Fridge Servicing',
+      description: 'Fridge servicing is a maintenance and repair service designed to ensure the optimal performance.'
+    %>
+    <%= render 'shared/service_cards',
+      icon:lucide_icon('arrow-right') ,
+      title: 'Home Cleaning',
+      description: 'Experienced professionals use effective cleaning methods and eco-friendly products.'
+    %>
+    <%= render 'shared/service_cards',
+      icon:lucide_icon('arrow-right'),
+      title: 'Office Cleaning',
+      description: 'Office cleaning services are specialized solutions designed to maintain a clean, healthy workspace.'
+    %>
+    <%= render 'shared/service_cards',
+      icon:lucide_icon('arrow-right') ,
+      title: 'Kitchen Cleaning',
+      description: 'Kitchen cleaning services provide thorough and specialized cleaning solutions.'
+    %>
+    <%= render 'shared/service_cards',
+      icon:lucide_icon('arrow-right') ,
+      title: 'Home Decor',
+      description: 'Home decor encompasses the art of enhancing and personalizing your living space.'
+    %>
 </div>
 </section> 
 
 <section class="relative w-full px-8 py-20 overflow-hidden md:px-16 lg:px-24 bg-gray-50" data-controller="carousel">
   <%= render "shared/floating_icons_offest" %>
-
   <div class="relative mb-16 text-center">
     <div class="flex flex-row items-center justify-center mb-4 font-medium text-blue-700"><%= lucide_icon("minus") %>Testimonials</div>
     <h2 class="mb-4 text-3xl font-bold text-blue-900">What our customers say</h2>
   </div>
-
 <%= render Components::Testimonials.new(@testimonials) %>
-
 </section>
+
+
+<section class="relative w-full px-8 py-20 overflow-hidden bg-white md:px-16 lg:px-24">
+  <%= render "shared/floating_icons_offest" %>
+      <div class="relative mb-16 text-center">
+        <div class="mb-4 font-medium text-blue-700">Pricing</div>
+        <h2 class="mb-4 text-3xl font-bold text-blue-900">
+          Choose your plan
+        </h2>
+        <p class="max-w-2xl mx-auto text-gray-600">
+          Select the perfect plan for your cleaning business. All plans include
+          our core features with different usage limits.
+        </p>
+      </div>
+   <div class="grid grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
+  <%= render 'shared/pricing_plans', plans: @pricing_plans  %>
+</div>
+</section>
+
+ <%= render 'shared/blog_section'%> 
+
+<div class="w-1/2 mx-auto">
+<%= render Components::RecentBlogs.new(@articles) %> 
+
+</div>
+
+<footer class="text-white bg-blue-900">
+      <div class="w-full px-8 py-16 md:px-16 lg:px-24">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <div class="flex items-center gap-2 mb-6">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="18" fill="#e0f2fe" />
+                <path d="M24 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-8-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-8 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14.5 10H13v-2h9.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z" fill="#3b82f6" />
+              </svg>
+              <span class="text-2xl font-bold">CleanBooking</span>
+            </div>
+            <p class="mb-4 text-blue-100">
+              Make Your Cleaning Website Here
+            </p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 text-blue-100">
+                <span>📞</span>
+                <a href="tel:6196210353" class="hover:text-white">
+                  6196210353
+                </a>
+              </div>
+              <div class="flex items-center gap-2 text-blue-100">
+                <span>✉️</span>
+                <a href="mailto:clean@cleanbooking.io" class="hover:text-white">
+                  clean@cleanbooking.io
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-6 text-lg font-semibold">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  Packages
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-6 text-lg font-semibold">Company</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-blue-100 hover:text-white">
+                  Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-6 text-lg font-semibold">Recent Post</h3>
+          
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-blue-800">
+        <div class="w-full px-8 py-6 text-sm text-center text-blue-200 md:px-16 lg:px-24">
+          Copyright © 2024 Reserved Passion by CleanBooking
+        </div>
+      </div>
+    </footer>;
