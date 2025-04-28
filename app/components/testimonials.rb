@@ -29,8 +29,6 @@ class Components::Testimonials < Phlex::HTML
           end
         end
       end
-      CarouselPrevious()
-      CarouselNext()
     end
   end
 end
