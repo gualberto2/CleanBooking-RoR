@@ -1,5 +1,6 @@
 
 class Components::Testimonials < Phlex::HTML
+  include Phlex::Rails::Helpers::ImageTag
   include RubyUI
 
   def initialize(testimonials)
@@ -14,21 +15,35 @@ class Components::Testimonials < Phlex::HTML
     end
   end
 
+
+
   def view_template
-    Carousel(options: { loop: true }, class: "w-full ") do
+    Carousel(options: { loop: true }, class: "max-w-4xl mx-auto ") do
       CarouselContent do
-        @testimonials.each do |testimonial|
-          CarouselItem do
-            div(class: "p-1") do
-              Card do
-                CardContent(class: "flex items-center justify-center p-6") do
-                  div(class: "text-4xl font-semibold") { testimonial[:content] }
+            @testimonials.each do |testimonial|
+              CarouselItem(class: "flex-shrink-0 w-full h-full p-10") do
+                div(class: "bg-white shadow-lg rounded-lg p-8") do
+                  div(class: "mb-6 text-4xl text-blue-700 h-min") do
+                    span { '"' }
+                  end
+                  p(class: "mb-8 text-lg text-gray-600") { testimonial[:content] }
+                  div(class: "flex items-center") do
+                    image_tag("#{testimonial[:image]}", class: "w-12 h-12 mr-4 rounded-full")
+                    div() do
+                      p(class: "font-semibold text-blue-900") do
+                        testimonial[:author]
+                      end
+                      p(class: "text-sm text-gray-600") do
+                        testimonial[:role]
+                  end
                 end
               end
             end
           end
         end
       end
+    CarouselPrevious()
+    CarouselNext()
     end
   end
 end

@@ -1,28 +1,31 @@
 class StaticPagesController < ApplicationController
   def landing_page
     @testimonials = [
-  {
-    id: 1,
-    content: "The cleaners are professional, punctual, and incredibly thorough...",
-    author: "Jhon Due",
-    role: "House Owner",
-    avatar: "https://randomuser.me/api/portraits/men/1.jpg"
-  },
-  {
-    id: 2,
-    content: "Outstanding service! The team was efficient and detail-oriented...",
-    author: "Sarah Johnson",
-    role: "Business Owner",
-    avatar: "https://randomuser.me/api/portraits/women/2.jpg"
-  },
-  {
-    id: 3,
-    content: "Exceptional cleaning service! The attention to detail and professionalism...",
-    author: "Michael Chen",
-    role: "Restaurant Manager",
-    avatar: "https://randomuser.me/api/portraits/men/3.jpg"
-  }
-]
+      {
+        id: 1,
+        content:
+          "The cleaners are professional, punctual, and incredibly thorough. My home has never looked so clean and inviting. Plus, they use eco-friendly products, which is a big plus for me. I highly recommend to anyone in need of top-notch cleaning services. I'll definitely be scheduling regular cleanings with them!",
+        author: "Jhon Due",
+        role: "House Owner",
+        avatar: "https://randomuser.me/api/portraits/men/1.jpg"
+      },
+      {
+        id: 2,
+        content:
+          "Outstanding service! The team was efficient and detail-oriented. They transformed my office space into a spotless environment. Their commitment to quality is evident in every aspect of their work.",
+        author: "Sarah Johnson",
+        role: "Business Owner",
+        avatar: "https://randomuser.me/api/portraits/women/2.jpg"
+      },
+      {
+        id: 3,
+        content:
+          "Exceptional cleaning service! The attention to detail and professionalism exceeded my expectations. The team is reliable, thorough, and always goes the extra mile.",
+        author: "Michael Chen",
+        role: "Restaurant Manager",
+        avatar: "https://randomuser.me/api/portraits/men/3.jpg"
+      }
+    ]
 
 @articles =[ {
   id: 1,
