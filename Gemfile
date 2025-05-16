@@ -4,8 +4,7 @@ source "https://rubygems.org"
 gem "rails", "~> 8.0.2"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 2.1"
+gem "pg"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
@@ -73,4 +72,14 @@ gem "lucide-rails", "~> 0.5.1"
 
 gem "importmap-rails", "~> 2.1"
 
-gem "devise", "~> 4.9"
+gem "ros-apartment", require: "apartment"
+
+gem "stripe", "~> 15.1"
+
+gem "htmlbeautifier"
+
+gem "omniauth-auth0", "~> 3.0"
+
+gem "omniauth-rails_csrf_protection", "~> 1.0" # prevents forged authentication requests
+
+gem "pundit", "~> 2.5"
