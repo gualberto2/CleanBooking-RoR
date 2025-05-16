@@ -116,4 +116,9 @@ class StaticPagesController < ApplicationController
       highlighted: false
     } ]
   end
+
+  def dashboard
+    # session[:userinfo] was saved earlier on Auth0Controller#callback
+    @user = session[:userinfo]
+  end
 end
