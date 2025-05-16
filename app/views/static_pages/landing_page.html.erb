@@ -30,10 +30,11 @@
         <button class="hidden px-4 py-2 text-gray-700 transition-colors border border-gray-300 rounded-md md:block hover:border-blue-700 hover:text-blue-700">
           Contact
         </button>
-        <button class="px-5 py-2 font-medium text-white bg-blue-700 rounded-md hover:bg-blue-800">
-       <%= link_to 'Login', dashboard_path %>
+       
 
-        </button>
+        <!-- Place a login button anywhere on your application -->
+  <%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
+
       </div>
     </header>
 
