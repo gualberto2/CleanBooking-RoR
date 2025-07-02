@@ -74,7 +74,7 @@ gem "importmap-rails", "~> 2.1"
 
 gem "ros-apartment", require: "apartment"
 
-gem "stripe", "~> 15.1"
+gem "stripe", "~> 15.3"
 
 gem "htmlbeautifier"
 
